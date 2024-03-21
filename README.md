@@ -10,14 +10,11 @@ Configure and create apache vhosts file automatically and in the var/www folder 
 # ./now-time.sh
 This script prints date and time to a file called now.log. It should be combined with a cron job.
 
-Give it permission to execute
---chmod +x write-now.sh
+Give it permission to execute: chmod +x write-now.sh
 
-Add it as a cron job
---crontab -e
+Add it as a cron job: crontab -e
 
 Add this to the last line in the file that gets opened:
 * * * * * /var/bash-test/write-now.sh
 
-To view all active cron jobs enter this command:
---crontab -l
+To view all active cron jobs enter this command: crontab -l
